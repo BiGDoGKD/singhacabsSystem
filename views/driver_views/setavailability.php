@@ -11,12 +11,12 @@ $driver = $_SESSION["D"];
 
 include("../dbconnection/usercon.php");
 require_once("../dbconnection/dbcon.php");
-$query = "select drivers.availability from drivers where drivers.user_name = 'isuru123'";
+$query = "select drivers.availability from drivers where drivers.user_name = '$driver'";
 $result = mysqli_query($conString, $query);
 $row = mysqli_fetch_array($result);
 $avaliablity = $row[0];
 if (isset($_POST["available"])) {
-    $query1 = "update drivers set drivers.availability = 1 WHERE drivers.user_name = 'isuru123'";
+    $query1 = "update drivers set drivers.availability = 1 WHERE drivers.user_name = '$driver'";
     $result1 = mysqli_query($conString, $query1);
     echo "<div class='availablity-status'>";
     echo "<h1 class='status-title' style='color:green;'>Currently Available</h1></div>";   
@@ -26,7 +26,7 @@ if (isset($_POST["available"])) {
         exit();
     }
 }else if(isset($_POST["not-available"])){
-    $query2 = "update drivers set drivers.availability = 0 WHERE drivers.user_name = 'isuru123'";
+    $query2 = "update drivers set drivers.availability = 0 WHERE drivers.user_name = '$driver'";
     $result2 = mysqli_query($conString, $query2);
     echo "<div class='availablity-status'>";
     echo "<h1 class='status-title' style='color:red;'>Currently Not Available</h1></div>"; 
