@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu {
+    padding-top: 10px;
+    display: block;
+    background: #13181d;
+}
+
+.account {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    border-radius: 45px;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+    height: 100%;
+}
+
+.content {
+    display: block;
+    background: #aefdcf;
+    padding: 50px;
+    background: rgb(255, 175, 27);
+    background: linear-gradient(283deg, rgba(255, 175, 27, 1) 20%, rgba(255, 239, 82, 1) 100%);
+    overflow-y: scroll;
+}
+
+.footer {
+    background: rgb(59, 59, 59);
+    height: 100%;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+caption {
+    font-family: 'Poppins' Bold;
+    color: #6f7274;
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+td,
+th {
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffaf1b;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+tr {
+    /* width: 100%; */
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 60% 30%;
+        height: 100%;
+    }
+}

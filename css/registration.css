@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in;
+}
+
+.signin-signup {
+    display: grid;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+}
+
+.input-field.select-input-field {
+    width: 100%;
+    outline: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #acacac;
+    background-color: #dfdfdf;
+    margin: 10px 0;
+    height: 55px;
+    border: 0px;
+    border-radius: 55px;
+    position: relative;
+    padding: 0 0 0 60px;
+}
+
+select {
+    width: 95%;
+    outline: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #acacac;
+    background: none;
+    height: 55px;
+    border: 0px;
+    border-radius: 55px;
+}
+
+option {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #acacac;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: 15px;
+}
+
+.input-field input {
+    width: 100%;
+    outline: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #dfdfdf;
+    margin: 10px 0;
+    height: 55px;
+    border: 0px;
+    border-radius: 55px;
+    position: relative;
+    padding: 0 0 0 60px;
+}
+
+.field-text {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.left-container {
+    top: 20%;
+    left: 50%;
+}
+
+.right-container {
+    top: 20%;
+    left: 10%;
+}
