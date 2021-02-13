@@ -2,8 +2,8 @@
 error_reporting(E_ALL ^ E_NOTICE); 
 class DBController {
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
+    private $user = "kesara";
+    private $password = "lordbuddha123";
     private $database = "mysitedb";
     
     private static $conn;

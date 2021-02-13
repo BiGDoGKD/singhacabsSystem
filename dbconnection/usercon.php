@@ -1,7 +1,7 @@
 <?php
 /*variable needed for the user to connect to the database*/
 $host="localhost"; //your database host name
-$dbuser="root"; //your database user name
-$dbpassword=""; //your database password
+$dbuser="kesara"; //your database user name
+$dbpassword="lordbuddha123"; //your database password
 $dbase="mysitedb"; //your database
 ?>
