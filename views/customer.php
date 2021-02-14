@@ -129,8 +129,8 @@ $uname = $_SESSION["C"];
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="profile-card">
                         <img src="./img/profile.svg" alt="">
-                        <h2 class="role">Administrator</h2>
-                        <span class="username">K. Devinda</span><br />
+                        <h2 class="role">Customer</h2>
+                        <span class="username"><?php echo $uname;?></span><br />
                         <!-- <a href="#" style="font-size: 1em;"><span class="logout">Logout</span></a> -->
                         <button class="logout-btn" onclick="location.href='./logout.php?logout'">Logout</button>
                     </div>

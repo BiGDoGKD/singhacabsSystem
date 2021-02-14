@@ -184,10 +184,15 @@
                     <i class="fas fa-palette"></i>
                     <input type="text" name="color" placeholder="Color" value="" /><span></span>
                 </div>
-                <div class="input-field">
-                    <i class="fas fa-car"></i>
-                    <input type="text" name="type" placeholder="Type" value="" /><span></span>
-                </div>
+                <div class="input-field select-input-field"><span></span>
+                            <i class="fas fa-car"></i>
+                            <select name="type" id="" required>
+                                <option value="sedan">Sedan</option>
+                                <option value="micro">Micro</option>
+                                <option value="cuv">CUV</option>
+                                <option value="van">Van</option>
+                            </select>
+                        </div>
             </div>
             <div class="box7">
 
