@@ -14,7 +14,7 @@ if ($temp != 2) {
     include("./dbconnection/usercon.php");
     require_once("./dbconnection/dbcon.php");
 }
-define('adminaccess',true);
+define('adminaccess', true);
 ?>
 
 
@@ -104,7 +104,7 @@ define('adminaccess',true);
             cursor: pointer;
         }
 
-      
+
 
         @media screen and (max-height: 450px) {
             .sidenav {
@@ -130,7 +130,7 @@ define('adminaccess',true);
                     <div class="profile-card">
                         <img src="./img/profile.svg" alt="">
                         <h2 class="role">Administrator</h2>
-                        <span class="username"><?php echo $_SESSION["A"];?></span><br />
+                        <span class="username"><?php echo $_SESSION["A"]; ?></span><br />
                         <!-- <a href="#" style="font-size: 1em;"><span class="logout">Logout</span></a> -->
                         <button class="logout_s" onclick="location.href='logout.php?logout'">Logout</button>
                     </div>
@@ -142,7 +142,7 @@ define('adminaccess',true);
                     <a href="#" onclick="vehiclesView()">Vehicles</a>
                     <a href="#" onclick="vehicletypesView()">Vehicle Types</a>
                     <a href="#" onclick="settingsView()">Account Settings</a>
-                    
+
 
                 </div>
             </div>
@@ -158,6 +158,13 @@ define('adminaccess',true);
             <div id="managers-view" style="display: none;">
                 <?php include 'managers.php' ?>
             </div>
+            <style>
+                #createM-view {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            </style>
             <div id="createM-view" style="display: none;">
                 <?php include 'createmanager.php' ?>
             </div>
